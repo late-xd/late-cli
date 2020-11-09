@@ -1,0 +1,29 @@
+{
+  "name": "late-xd",
+  "version": "0.0.0",
+  "description": "a modern typesetting solution",
+  "main": "./dist/main.js",
+  "repository": "https://github.com/m93a/late-xd",
+  "author": "Michal Grno <m93a.cz@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev:electron": "NODE_ENV=development webpack --config webpack.electron.config.js --mode development && electron .",
+    "dev:react": "NODE_ENV=development webpack serve --config webpack.react.config.js --mode development"
+  },
+  "dependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.5",
+    "@babel/preset-typescript": "^7.12.1",
+    "@types/react": "^16.9.56",
+    "@types/react-dom": "^16.9.9",
+    "babel-loader": "^8.1.0",
+    "electron": "^10.1.5",
+    "html-webpack-plugin": "^4.5.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "webpack": "^5.4.0",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
