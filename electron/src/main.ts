@@ -32,7 +32,7 @@ function createWindow() {
     } else {
         mainWindow.loadURL(
             url.format({
-                pathname: path.join(__dirname, '../index.html'),
+                pathname: path.join(__dirname, '../../index.html'),
                 protocol: 'file:',
                 slashes: true
             })
@@ -45,7 +45,7 @@ function createWindow() {
 
     mainWindow.webContents.on('did-finish-load', async () => {
         const buffer = await mainWindow.webContents.printToPDF(pdfOptions)
-        await writeFile(path.join(__dirname, '../output/out.pdf'), buffer)
+        await writeFile(path.join(__dirname, '../../output/out.pdf'), buffer)
     })
 
 }

@@ -6,7 +6,7 @@ module.exports = {
     extensions: ['.tsx', '.ts', '.js'],
     mainFields: ['main', 'module', 'browser'],
   },
-  entry: './src/app.tsx',
+  entry: './react/src/app.tsx',
   target: 'electron-renderer',
   devtool: 'source-map',
   module: {
@@ -21,7 +21,7 @@ module.exports = {
     ],
   },
   devServer: {
-    contentBase: path.join(__dirname, '../dist/renderer'),
+    contentBase: path.join(__dirname, './react/dist'),
     historyApiFallback: true,
     compress: true,
     hot: true,
@@ -29,7 +29,7 @@ module.exports = {
     publicPath: '/',
   },
   output: {
-    path: path.resolve(__dirname, '../dist/renderer'),
+    path: path.resolve(__dirname, './react/dist'),
     filename: 'js/[name].js',
     publicPath: './',
   },

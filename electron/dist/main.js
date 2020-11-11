@@ -67,10 +67,10 @@ __webpack_require__(/*! regenerator-runtime/runtime */ "./node_modules/regenerat
 
 /***/ }),
 
-/***/ "./electron/main.ts":
-/*!**************************!*\
-  !*** ./electron/main.ts ***!
-  \**************************/
+/***/ "./electron/src/main.ts":
+/*!******************************!*\
+  !*** ./electron/src/main.ts ***!
+  \******************************/
 /*! namespace exports */
 /*! exports [not provided] [no usage info] */
 /*! runtime requirements: __webpack_require__, __webpack_require__.n, __webpack_require__.r, __webpack_exports__, __webpack_require__.* */
@@ -139,7 +139,7 @@ function createWindow() {
           case 2:
             buffer = _context.sent;
             _context.next = 5;
-            return writeFile(path__WEBPACK_IMPORTED_MODULE_3__.join(__dirname, '../output/out.pdf'), buffer);
+            return writeFile(path__WEBPACK_IMPORTED_MODULE_3__.join(__dirname, '../../output/out.pdf'), buffer);
 
           case 5:
           case "end":
@@ -10891,7 +10891,7 @@ module.exports = require("util");;
 /************************************************************************/
 /******/ 	// startup
 /******/ 	// Load entry module
-/******/ 	__webpack_require__("./electron/main.ts");
+/******/ 	__webpack_require__("./electron/src/main.ts");
 /******/ 	// This entry module used 'exports' so it can't be inlined
 /******/ })()
 ;
